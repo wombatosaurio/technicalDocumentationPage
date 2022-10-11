@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,400;1,100;1,200;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap');;
+
+body {
+  overflow-x: hidden;
+  font-family: 'Mulish', sans-serif;
+  font-size: 16px;
+}
+
+/* General Styling */
+
+#container {
+  padding-left: 250px;
+}
+
+#main-doc {
+  width: 100%;
+  position: relative;
+  margin-right: 0;
+}
+
+#main-doc header {
+    font-family: 'Kanit', sans-serif;
+    font-size: 30px;
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
+    color: #565264;
+}
+
+section {
+    padding-bottom: 1rem;
+}
+
+code {
+    display: block;
+    text-align: left;
+    white-space: pre-line;
+    position: relative;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 2;
+    background-color: #D6CFCB;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 5px;
+    color: #706677;
+    
+}
+
+/* Side navbar Styling*/
+
+#sidebar {
+  z-index: 1000;
+  position: fixed;
+  left: 250px;
+  width: 250px;
+  height: 100%;
+  margin-left: -250px;
+  overflow-y: auto;
+  background: #706677;
+  border: 1px solid #565264;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  overflow-y: scroll; 
+}
+
+#sidebar::-webkit-scrollbar {
+    display: none;
+}
+
+#sidebar header {
+  background-color: #565264;
+  font-size: 20px;
+  line-height: 52px;
+  text-align: center;
+  font-family: 'Kanit', sans-serif;
+  top: 0;
+  position: sticky;
+}
+
+#sidebar header a {
+  color: #D6CFCB;
+  display: block;
+  text-decoration: none;
+}
+
+#sidebar header a:hover {
+  color: #A6808C;
+}
+
+#sidebar .nav a{
+  background: none;
+  border-bottom: 1px solid #D6CFCB;
+  color: #CCB7AE;
+  font-size: 16px;
+  padding: 16px 24px;
+  text-align: left;
+}
+
+#sidebar .nav a:hover{
+  background: none;
+  color: #A6808C;
+}
+
+#sidebar .nav a i{
+  margin-right: 16px;
+}
+
+/* Media Query */
+
+@media only screen and (max-width: 720px) {
+
+    body {
+        font-size: 14px;
+    }
+
+    #sidebar {
+        width: 30%;
+    }
+
+    #sidebar header {
+        font-size: 14px;
+    }
+
+    #sidebar .nav a {
+        font-size: 12px;
+    }
+
+    #container {
+        padding-left: 30%;
+    }   
+    
+    #main-doc header {
+        font-size: 22px;
+    }
+}
+
